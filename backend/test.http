@@ -1,0 +1,84 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "yoman",
+  "password" : "ade",
+  "name" : "ade muchl"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username" : "yow",
+  "password" : "ade"
+}
+
+###
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 1a149812-b71a-49f8-932e-5a2cc2d53bf6
+
+###
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 1a149812-b71a-49f8-932e-5a2cc2d53bf6
+
+{
+  "name" : "adean"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: f2db37f3-045e-4523-bbb1-5d57a1fc5a5c
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Accept: application/json
+Authorization: a2683567-ed30-4db0-bc8e-5a1ee0602169
+
+{
+  
+    "title": "sendal ",
+    "description": "sepatu bagus banget ini",
+    "price": 30000,
+    "size": "L",
+    "image": "gambar sepatu"
+}
+
+###
+
+GET http://localhost:3000/api/products/1
+Content-Type: application/json
+Accept: application/json
+Authorization: d7e0c404-3950-4e74-b257-d905cca2ea9f
+
+###
+POST http://localhost:3000/api/yow/carts
+Content-Type: application/json
+Accept: application/json
+
+{
+    "productId" : 2,
+    "quantity" : 4
+}
+
+###
+GET http://localhost:3000/api/carts
+Content-Type: application/json
+Accept: application/json
+
+###
+GET http://localhost:3000/api/ade/1
+Content-Type: application/json
+Accept: application/json

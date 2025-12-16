@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User { 
+  username String  @id @db.VarChar(100)
+  password String  @db.VarChar(100)
+  name String @db.VarChar(100)
+  token String? 
+  products Product[]
+
+   @@map("users")
+}
+
+model Product {
+  id            Int       @id @default(autoincrement())
+  title         String    @db.VarChar(100)
+  description   String?   @db.VarChar(1000)
+  image         String?   @db.VarChar(100)
+  size          String?   @db.VarChar(100)
+  price         Float
+  cartItems   CartItem[]
+
+  user_id String @db.VarChar(100)
+  user User @relation(fields: [user_id], references: [username])
+
+  @@map("products")
+}
+
+model Cart {
+  id         Int         @id @default(autoincrement())
+  sessionId  String?     // pakai kalau belum login
+  items      CartItem[]
+  createdAt  DateTime    @default(now())
+}
+
+model CartItem {
+  id        Int       @id @default(autoincrement())
+  cartId    Int
+  productId Int
+  quantity  Int       @default(1)
+  product   Product   @relation(fields: [productId], references: [id])
+  cart      Cart      @relation(fields: [cartId], references: [id])
+}
+
+
+
+

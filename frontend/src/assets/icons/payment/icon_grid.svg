@@ -1,0 +1,26 @@
+<svg width="106" height="102" viewBox="0 0 106 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_319_372)">
+<path d="M9 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M22.8573 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M36.7142 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M50.5715 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M64.4285 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M78.2858 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M92.1427 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M106 0V103" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 0H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 14.7142H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 29.4286H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 44.1429H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 58.8571H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 73.5714H106" stroke="#B3B3B3" stroke-width="0.25"/>
+<path d="M9 88.2856H106" stroke="#B3B3B3" stroke-width="0.25"/>
+</g>
+<defs>
+<filter id="filter0_f_319_372" x="0.875" y="-8.125" width="113.25" height="119.25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_319_372"/>
+</filter>
+</defs>
+</svg>
